@@ -1,0 +1,4 @@
+install grpc: brew install grpc
+check grpc: protoc --version
+
+install protoc-gen-go: brew install protoc-gen-go

@@ -1,0 +1,9 @@
+module github.com/kaidev1024/protobuf
+
+go 1.14
+
+require (
+	github.com/fullstorydev/grpcurl v1.7.0 // indirect
+	github.com/golang/protobuf v1.4.2 // indirect
+	google.golang.org/grpc v1.32.0 // indirect
+)
