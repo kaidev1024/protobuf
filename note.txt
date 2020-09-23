@@ -2,3 +2,10 @@ install grpc: brew install grpc
 check grpc: protoc --version
 
 install protoc-gen-go: brew install protoc-gen-go
+install grpcurl for testing: brew install grpcurl
+
+grpcurl --plaintext localhost:9092 list //work as curl
+grpcurl --plaintext localhost:9092 list Currency
+grpcurl --plaintext localhost:9092 describe Currency.GetRate
+grpcurl --plaintext localhost:9092 describe .RateRequest
+grpcurl --plaintext -d '{"base":"GBP", "destination":"USD"}' localhost:9092 Currency.GetRate
